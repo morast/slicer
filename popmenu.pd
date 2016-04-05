@@ -1,0 +1,51 @@
+#N canvas 65 82 650 686 10;
+#X obj 101 101 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 117 101 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 133 101 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 148 101 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X symbolatom 101 101 10 0 0 0 - - -;
+#X obj 101 145 tof/pmenu;
+#X obj 165 345 outlet;
+#X obj 222 119 prepend add;
+#X obj 222 78 inlet;
+#X obj 219 328 prepend pattern;
+#X obj 269 79 r pattern-list;
+#X obj 165 291 symbol;
+#X obj 165 101 bng 15 250 50 0 empty empty empty 17 7 0 10 -128992
+-262144 -262144;
+#X obj 219 354 s \$1;
+#X obj 165 42 r \$1-\$2;
+#X obj 219 281 prepend bam;
+#X obj 219 260 \$2;
+#X obj 260 229 prepend set-pattern;
+#X obj 260 202 prepend \$2;
+#X obj 424 -31 r \$1-\$2-pmenu;
+#X obj 424 -8 prepend set;
+#X connect 0 0 5 0;
+#X connect 1 0 5 0;
+#X connect 2 0 5 0;
+#X connect 3 0 5 0;
+#X connect 5 1 4 0;
+#X connect 5 1 11 1;
+#X connect 5 1 18 0;
+#X connect 7 0 5 0;
+#X connect 8 0 7 0;
+#X connect 9 0 13 0;
+#X connect 10 0 5 0;
+#X connect 11 0 9 0;
+#X connect 11 0 6 0;
+#X connect 12 0 11 0;
+#X connect 12 0 16 0;
+#X connect 14 0 12 0;
+#X connect 15 0 13 0;
+#X connect 16 0 15 0;
+#X connect 17 0 13 0;
+#X connect 18 0 17 0;
+#X connect 19 0 20 0;
+#X connect 20 0 5 0;
+#X connect 20 0 4 0;
+#X coords 0 -1 1 1 81 18 2 100 100;
